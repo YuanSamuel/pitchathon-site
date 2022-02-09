@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import NavBar from '../components/navbar'
+import Landing from '../components/landing'
+import About from '../components/about'
+import FAQs from '../components/faqs'
+import Sponsors from '../components/sponsors'
 
 export default function Home() {
   return (
@@ -10,8 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen flex-col py-16">
-        <p> hello</p>
+      <main className="min-h-screen flex-col">
+        <NavBar />
+        <Landing />
+        <About />
+        <FAQs />
+        <Sponsors />
       </main>
     </div>
   )
