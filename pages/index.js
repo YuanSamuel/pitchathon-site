@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen flex-col">
-        <NavBar />
         <Landing />
         <About />
         <FAQs />

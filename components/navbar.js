@@ -2,7 +2,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <nav className="fixed top-6 right-4 lg:right-8 items-center font-cousine md:text-lg hidden sm:flex">
+      <nav className="absolute top-6 right-4 lg:right-8 items-center font-cousine md:text-lg hidden sm:flex">
         <div
           className="cursor-pointer"
           onClick={() => {
@@ -10,7 +10,7 @@ export default function NavBar() {
             anchor.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <p className="mr-14">01. About</p>
+          <p className="mr-14">About</p>
         </div>
         <div
           className="cursor-pointer"
@@ -19,7 +19,7 @@ export default function NavBar() {
             anchor.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <p className="mr-14">02. Projects</p>
+          <p className="mr-14">FAQs</p>
         </div>
         <div
           className="cursor-pointer"
@@ -28,16 +28,7 @@ export default function NavBar() {
             anchor.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <p className="mr-14">03. Writing</p>
-        </div>
-        <div
-          className="cursor-pointer"
-          onClick={() => {
-            const anchor = document.querySelector("#contact");
-            anchor.scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          <p>04. Contact</p>
+          <p className="mr-14">Sponsors</p>
         </div>
       </nav>
     </div>
